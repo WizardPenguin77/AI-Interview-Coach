@@ -1,0 +1,753 @@
+{
+  "roadmap_overview": {
+    "target_role": "Entry-level Software Engineer",
+    "candidate_assessment": {
+      "current_strengths": [
+        "You have identified data structures, algorithms, and system design as preparation priorities.",
+        "You have a clear one-week deadline, which makes it possible to focus on the highest-impact interview skills."
+      ],
+      "knowledge_gaps": [
+        "Your current proficiency in data structures and algorithms is unknown, so the plan starts with a quick fundamentals check and emphasizes practice over broad coverage.",
+        "You report limited system design experience; the goal is to learn a structured approach to a small, entry-level design discussion, not advanced distributed systems.",
+        "Your experience with timed coding, explaining solutions aloud, behavioral questions, and mock interviews is unknown."
+      ],
+      "missing_preparation_steps": [
+        "Establish a baseline with a timed coding problem and record whether you can explain complexity and test edge cases.",
+        "Practice implementing solutions independently rather than relying on hints or reading solutions.",
+        "Complete at least one timed mock interview and review mistakes.",
+        "Prepare concise behavioral examples and be ready to discuss resume projects."
+      ],
+      "redundant_or_low_value_activities": [
+        "Do not attempt to cover every data structure or advanced algorithm in one week.",
+        "Avoid watching long tutorials without immediately implementing or practicing the concepts.",
+        "Avoid repeatedly solving familiar problems while leaving weak patterns untested.",
+        "Avoid deep system-design topics such as multi-region architecture or consensus protocols unless the recruiter explicitly indicates they are relevant."
+      ]
+    },
+    "assumptions": [
+      "Interview is in approximately seven days.",
+      "Daily availability was not provided; this plan assumes up to four focused hours per day, with a total of approximately 27.5 hours. Reduce the workload if that is not realistic.",
+      "No programming language, experience level, target companies, interview format, or specific role specialization was provided.",
+      "For an entry-level role, coding problem-solving is expected to be the main technical focus. System-design depth varies by company and interview loop, so this plan covers fundamentals and communication rather than advanced architecture.",
+      "Resource links are general study references, not claims about requirements at any particular company."
+    ],
+    "overall_strategy": "Spend most time solving and explaining common coding problems, prioritizing arrays, strings, hash maps, and reusable algorithm patterns. Build tree and graph fundamentals after core coding practice. Learn a lightweight system-design framework and apply it to one small service. Finish with timed practice, behavioral preparation, and targeted review. Use an error log to direct the final study sessions.",
+    "total_estimated_hours": 27.5,
+    "priority_distribution": [
+      {
+        "category": "Data structures and algorithms",
+        "percentage": 70,
+        "rationale": "Coding interviews are a central entry-level technical screen at many companies. Practice on high-frequency patterns has the broadest expected impact."
+      },
+      {
+        "category": "Entry-level system design",
+        "percentage": 18,
+        "rationale": "You report little system-design experience, so a focused foundation can help without displacing core coding preparation."
+      },
+      {
+        "category": "Interview execution, behavioral preparation, and review",
+        "percentage": 12,
+        "rationale": "Clear communication, timed practice, and familiarity with your own projects help convert technical knowledge into interview performance."
+      }
+    ]
+  },
+  "topic_priorities": [
+    {
+      "topic_id": "T1",
+      "topic": "Coding interview foundations: problem solving, complexity, and communication",
+      "priority": "high",
+      "priority_rank": 1,
+      "expected_impact": "Improves performance across nearly every coding problem by making reasoning, complexity analysis, and testing explicit.",
+      "current_level": "Unknown; assess during the first timed problem.",
+      "target_level": "Consistently clarify requirements, describe a simple approach, derive time and space complexity, and test edge cases.",
+      "prerequisites": [],
+      "reason_for_priority": "These habits apply to every coding topic and are inexpensive to practice before tackling more specialized patterns.",
+      "estimated_total_hours": 1.5
+    },
+    {
+      "topic_id": "T2",
+      "topic": "Arrays, strings, and hash maps",
+      "priority": "critical",
+      "priority_rank": 2,
+      "expected_impact": "High: these structures and their common patterns appear frequently in entry-level coding screens.",
+      "current_level": "Unknown; no skill baseline was provided.",
+      "target_level": "Independently solve representative easy and medium problems using hash maps, frequency counts, two pointers, and sliding windows.",
+      "prerequisites": [
+        "T1"
+      ],
+      "reason_for_priority": "This is a high-yield foundation with useful patterns that transfer to many problem types.",
+      "estimated_total_hours": 6.5
+    },
+    {
+      "topic_id": "T3",
+      "topic": "Trees, recursion, and graph traversal",
+      "priority": "high",
+      "priority_rank": 3,
+      "expected_impact": "Provides preparation for common traversal problems and demonstrates comfort with recursion, queues, and visited-state tracking.",
+      "current_level": "Unknown.",
+      "target_level": "Implement basic binary-tree DFS and BFS, and explain a basic graph traversal with a visited set and complexity.",
+      "prerequisites": [
+        "T1",
+        "T2"
+      ],
+      "reason_for_priority": "Traversal is a common interview pattern, but it depends on basic implementation and state-tracking skills.",
+      "estimated_total_hours": 5
+    },
+    {
+      "topic_id": "T4",
+      "topic": "Core algorithm patterns: binary search, sorting, stacks, intervals, and selection of approaches",
+      "priority": "critical",
+      "priority_rank": 4,
+      "expected_impact": "Broad: recognizing a suitable pattern can substantially reduce solution time across varied coding problems.",
+      "current_level": "Unknown.",
+      "target_level": "Recognize and implement basic binary search, stack use, interval merging, and sorting-based approaches; explain trade-offs.",
+      "prerequisites": [
+        "T1",
+        "T2"
+      ],
+      "reason_for_priority": "These patterns extend the core toolkit, but should follow foundational problem-solving and array practice.",
+      "estimated_total_hours": 6.5
+    },
+    {
+      "topic_id": "T5",
+      "topic": "Entry-level system design fundamentals",
+      "priority": "medium",
+      "priority_rank": 5,
+      "expected_impact": "Useful if the interview includes a design discussion; improves structured reasoning about requirements, APIs, data, and basic scaling.",
+      "current_level": "You report that you do not know system design well.",
+      "target_level": "Structure a small design discussion, state assumptions, propose an API and data model, identify bottlenecks, and explain one or two reasonable trade-offs.",
+      "prerequisites": [],
+      "reason_for_priority": "A concise foundation addresses your stated gap while recognizing that system-design expectations vary for entry-level interviews.",
+      "estimated_total_hours": 5
+    },
+    {
+      "topic_id": "T6",
+      "topic": "Mock interviews, behavioral examples, and final review",
+      "priority": "high",
+      "priority_rank": 6,
+      "expected_impact": "Improves clarity under time pressure and helps identify remaining weaknesses before the interview.",
+      "current_level": "Unknown.",
+      "target_level": "Complete a realistic timed mock, review mistakes, and deliver concise behavioral and project explanations.",
+      "prerequisites": [
+        "T1",
+        "T2"
+      ],
+      "reason_for_priority": "Practice and reflection help convert knowledge into interview-ready execution; it is especially valuable in the final days.",
+      "estimated_total_hours": 3
+    }
+  ],
+  "preparation_phases": [
+    {
+      "phase_id": "P1",
+      "phase_name": "Baseline and coding foundations",
+      "objective": "Determine your starting point and establish a repeatable process for solving and explaining coding problems.",
+      "estimated_hours": 4,
+      "topics_covered": [
+        "T1",
+        "T2"
+      ],
+      "tasks": [
+        {
+          "task_id": "P1-T1",
+          "topic_id": "T1",
+          "task_name": "Timed baseline and problem-solving routine",
+          "what_to_study": [
+            "Review how to clarify inputs, outputs, constraints, and edge cases.",
+            "Review Big-O time and space complexity for loops, nested loops, arrays, and hash maps.",
+            "Use a consistent interview sequence: clarify, propose, analyze, implement, test."
+          ],
+          "practice_activities": [
+            "Attempt one unfamiliar easy or medium array problem for 35 minutes without looking at a solution.",
+            "Explain your approach aloud and record where you got stuck.",
+            "Write a brief baseline note covering correctness, time management, communication, and complexity analysis."
+          ],
+          "recommended_resources": [
+            {
+              "name": "LeetCode Interview Crash Course",
+              "url": "https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/",
+              "purpose": "Reference for interview problem-solving and data-structure fundamentals."
+            }
+          ],
+          "estimated_minutes": 90,
+          "completion_criteria": [
+            "Complete one timed attempt and save the prompt, code, and result.",
+            "State the time and space complexity of the final approach or identify exactly what remains unclear.",
+            "List at least two specific weaknesses to revisit."
+          ],
+          "reason": "A baseline makes the remaining week more targeted and establishes communication habits that apply to all technical problems."
+        },
+        {
+          "task_id": "P1-T2",
+          "topic_id": "T2",
+          "task_name": "Array, string, and hash-map foundations",
+          "what_to_study": [
+            "Review array and string traversal, indexing, mutation, and boundary conditions.",
+            "Review hash-map lookup, insertion, frequency counting, and set membership.",
+            "Compare a nested-loop solution with a hash-map solution and explain the time-space trade-off."
+          ],
+          "practice_activities": [
+            "Solve one easy frequency-count or lookup problem and one easy duplicate or pair-search problem.",
+            "Solve one two-pointer or string-scanning problem.",
+            "For each problem, explain the invariant and test empty, singleton, duplicate, and boundary inputs where relevant."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Provides a structured list of common coding patterns and practice problems."
+            }
+          ],
+          "estimated_minutes": 150,
+          "completion_criteria": [
+            "Complete at least three problems, with at least two solved without a solution walkthrough.",
+            "Explain the complexity of each final solution.",
+            "Record one mistake or useful pattern for each problem."
+          ],
+          "reason": "Array and hash-map techniques are high-frequency foundations for later coding patterns."
+        }
+      ],
+      "phase_completion_criteria": [
+        "Complete a timed baseline problem and identify concrete improvement areas.",
+        "Independently solve at least two foundational array or hash-map problems.",
+        "Explain complexity and test representative edge cases for each completed solution."
+      ]
+    },
+    {
+      "phase_id": "P2",
+      "phase_name": "High-yield coding patterns",
+      "objective": "Build fluency with array-based techniques and common patterns that can be applied under interview time constraints.",
+      "estimated_hours": 8,
+      "topics_covered": [
+        "T2",
+        "T4"
+      ],
+      "tasks": [
+        {
+          "task_id": "P2-T2",
+          "topic_id": "T2",
+          "task_name": "Sliding window, two pointers, and frequency practice",
+          "what_to_study": [
+            "Review fixed-size and variable-size sliding-window reasoning.",
+            "Review sorted-array two-pointer techniques and hash-map frequency patterns.",
+            "Practice stating the condition that expands or contracts a window."
+          ],
+          "practice_activities": [
+            "Solve two medium problems: one sliding-window problem and one two-pointer or frequency-map problem.",
+            "Before coding, describe the key invariant and why the algorithm does not miss valid answers.",
+            "Re-solve one missed problem from a blank editor after a short break."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Use the array, hash-map, two-pointer, and sliding-window categories to select representative practice problems."
+            }
+          ],
+          "estimated_minutes": 150,
+          "completion_criteria": [
+            "Complete two medium attempts; at least one must be solved independently within approximately 35 minutes.",
+            "Explain the invariant, complexity, and relevant edge cases aloud.",
+            "Re-implement the missed solution without viewing it."
+          ],
+          "reason": "These patterns build directly on the array and hash-map foundation and are broadly reusable."
+        },
+        {
+          "task_id": "P2-T4",
+          "topic_id": "T4",
+          "task_name": "Binary search, stacks, intervals, and sorting patterns",
+          "what_to_study": [
+            "Review binary-search boundaries and termination conditions.",
+            "Review stack use for matching, monotonic relationships, or last-in-first-out processing.",
+            "Review sorting followed by scanning for interval merging and related tasks.",
+            "Identify when sorting changes the complexity and whether it changes required output order."
+          ],
+          "practice_activities": [
+            "Solve one binary-search problem, one stack problem, and one sorting or interval problem.",
+            "For each, state why the selected pattern fits before writing code.",
+            "Test boundary cases such as empty input, one element, repeated values, and touching intervals where relevant."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Find representative binary-search, stack, and interval problems."
+            },
+            {
+              "name": "VisuAlgo",
+              "url": "https://visualgo.net/en",
+              "purpose": "Visual reference for understanding selected data structures and algorithm behavior."
+            }
+          ],
+          "estimated_minutes": 330,
+          "completion_criteria": [
+            "Complete at least three representative problems across the listed patterns.",
+            "Implement binary search without an off-by-one error on a focused test set.",
+            "Explain the approach and complexity for every completed problem."
+          ],
+          "reason": "These common patterns add breadth after the core array foundation without requiring advanced algorithm study."
+        }
+      ],
+      "phase_completion_criteria": [
+        "Complete at least five focused problems across T2 and T4 during the phase.",
+        "Solve at least three without a solution walkthrough.",
+        "For missed problems, record the pattern, the failed assumption, and a next-step practice item."
+      ]
+    },
+    {
+      "phase_id": "P3",
+      "phase_name": "Traversal fundamentals and system-design introduction",
+      "objective": "Learn basic tree and graph traversal, then apply a simple structure to an entry-level system-design prompt.",
+      "estimated_hours": 8,
+      "topics_covered": [
+        "T3",
+        "T5"
+      ],
+      "tasks": [
+        {
+          "task_id": "P3-T3",
+          "topic_id": "T3",
+          "task_name": "Tree recursion, DFS, BFS, and basic graph traversal",
+          "what_to_study": [
+            "Review recursive traversal and base cases for binary trees.",
+            "Review iterative BFS with a queue and DFS with recursion or an explicit stack.",
+            "Review graph adjacency lists, visited sets, and traversal complexity."
+          ],
+          "practice_activities": [
+            "Implement preorder or inorder DFS and level-order BFS for a binary tree.",
+            "Solve one tree traversal problem and one basic graph reachability or connected-components problem.",
+            "Trace a small example by hand and explain when a visited set is necessary."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Select basic tree and graph traversal problems for interview practice."
+            },
+            {
+              "name": "VisuAlgo",
+              "url": "https://visualgo.net/en",
+              "purpose": "Visualize BFS and DFS traversal behavior."
+            }
+          ],
+          "estimated_minutes": 240,
+          "completion_criteria": [
+            "Implement one tree DFS and one BFS traversal from memory.",
+            "Complete at least two traversal problems, including one involving a graph or visited set.",
+            "Explain traversal time and space complexity in terms of nodes and edges where applicable."
+          ],
+          "reason": "Tree and graph traversal are common interview skills and build on recursion, queues, and state tracking."
+        },
+        {
+          "task_id": "P3-T5",
+          "topic_id": "T5",
+          "task_name": "System-design framework and one small design",
+          "what_to_study": [
+            "Learn to clarify functional requirements, scale assumptions, and non-functional goals.",
+            "Review a basic request flow: client, API, service, storage, and response.",
+            "Review APIs, a simple data model, caching as an optional optimization, and basic availability or latency trade-offs.",
+            "Distinguish what is required initially from improvements justified by stated needs."
+          ],
+          "practice_activities": [
+            "Use a simple prompt such as designing a URL shortener or a basic notes service.",
+            "Spend 10 minutes clarifying requirements and assumptions, 10 minutes sketching APIs and data, and 15 minutes discussing bottlenecks and trade-offs.",
+            "Explain the design aloud and note one limitation and one reasonable next improvement."
+          ],
+          "recommended_resources": [
+            {
+              "name": "System Design Primer",
+              "url": "https://github.com/donnemartin/system-design-primer",
+              "purpose": "Reference for foundational system-design concepts and interview structure."
+            }
+          ],
+          "estimated_minutes": 240,
+          "completion_criteria": [
+            "Produce one readable design sketch with requirements, API examples, data entities, and request flow.",
+            "State at least two assumptions and explain why a chosen storage or caching approach fits them.",
+            "Discuss one bottleneck and one trade-off without relying on advanced architecture jargon."
+          ],
+          "reason": "This focused exercise addresses your stated system-design gap while keeping the scope appropriate for an entry-level interview."
+        }
+      ],
+      "phase_completion_criteria": [
+        "Implement and explain both tree and graph traversal fundamentals.",
+        "Complete one timed, spoken system-design walkthrough using a consistent structure.",
+        "Identify which design decisions follow from requirements and which are optional improvements."
+      ]
+    },
+    {
+      "phase_id": "P4",
+      "phase_name": "Timed practice, interview readiness, and targeted review",
+      "objective": "Test performance under realistic conditions, close the largest remaining gaps, and prepare concise behavioral and project explanations.",
+      "estimated_hours": 7.5,
+      "topics_covered": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "tasks": [
+        {
+          "task_id": "P4-T2",
+          "topic_id": "T2",
+          "task_name": "Repair the weakest array or string pattern",
+          "what_to_study": [
+            "Review the specific T2 pattern that produced the most errors in the error log."
+          ],
+          "practice_activities": [
+            "Solve one fresh problem in the weak pattern, then re-solve one previously missed problem without notes."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Choose a targeted problem based on your logged weakness."
+            }
+          ],
+          "estimated_minutes": 90,
+          "completion_criteria": [
+            "Complete at least one independent solution and explain its invariant and complexity.",
+            "Update the error log with a concrete prevention strategy."
+          ],
+          "reason": "Targeted repair is more valuable than adding unrelated topics at the end of a short preparation window."
+        },
+        {
+          "task_id": "P4-T3",
+          "topic_id": "T3",
+          "task_name": "Traversal recall and edge-case review",
+          "what_to_study": [
+            "Review DFS, BFS, base cases, queue behavior, and visited-set logic from memory."
+          ],
+          "practice_activities": [
+            "Implement a short traversal from a blank editor and test an empty structure, a single node, and a disconnected or repeated-visit case as applicable."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Reference a basic tree or graph problem if recall practice exposes a gap."
+            }
+          ],
+          "estimated_minutes": 60,
+          "completion_criteria": [
+            "Write the traversal without consulting a solution.",
+            "Explain complexity and identify when visited tracking is needed."
+          ],
+          "reason": "Short recall practice checks whether traversal knowledge is usable under interview conditions."
+        },
+        {
+          "task_id": "P4-T4",
+          "topic_id": "T4",
+          "task_name": "Pattern selection and error-log review",
+          "what_to_study": [
+            "Review your mistakes from binary search, stacks, and intervals.",
+            "Compare the expected signals for using a hash map, two pointers, a stack, sorting, or binary search."
+          ],
+          "practice_activities": [
+            "Do a 30-minute mixed-pattern problem and spend the remaining time explaining why the chosen approach fits and what alternatives cost."
+          ],
+          "recommended_resources": [
+            {
+              "name": "NeetCode Roadmap",
+              "url": "https://neetcode.io/roadmap",
+              "purpose": "Select one mixed review problem based on the weakest recorded pattern."
+            }
+          ],
+          "estimated_minutes": 60,
+          "completion_criteria": [
+            "Complete one timed attempt and identify the pattern before coding.",
+            "State complexity and one plausible alternative approach."
+          ],
+          "reason": "Pattern selection is an important interview skill and a compact way to consolidate the week’s practice."
+        },
+        {
+          "task_id": "P4-T5",
+          "topic_id": "T5",
+          "task_name": "System-design recall and concise second walkthrough",
+          "what_to_study": [
+            "Review your requirements-first design framework, API, data model, and trade-off checklist."
+          ],
+          "practice_activities": [
+            "Give a 20-minute second walkthrough of a small service design, using a different prompt or a modified requirement.",
+            "Use the remaining time to identify one unclear assumption and refine the design explanation."
+          ],
+          "recommended_resources": [
+            {
+              "name": "System Design Primer",
+              "url": "https://github.com/donnemartin/system-design-primer",
+              "purpose": "Review only the foundational concept needed to resolve a specific gap."
+            }
+          ],
+          "estimated_minutes": 60,
+          "completion_criteria": [
+            "Cover requirements, API, data, request flow, one bottleneck, and one trade-off within 20 minutes.",
+            "Clearly distinguish stated requirements from assumptions."
+          ],
+          "reason": "A second application reinforces a reusable structure without spending limited time on advanced design topics."
+        },
+        {
+          "task_id": "P4-T6",
+          "topic_id": "T6",
+          "task_name": "Timed mock, behavioral preparation, and final review",
+          "what_to_study": [
+            "Review the interview sequence from T1 and your error log.",
+            "Prepare concise STAR-style examples for collaboration, handling a challenge, learning from a mistake, and taking initiative, using only experiences you can truthfully discuss.",
+            "Review your resume projects and be ready to explain your contribution, decisions, and results."
+          ],
+          "practice_activities": [
+            "Complete one 45-minute coding mock with a peer, interviewer, or timer; narrate reasoning and test the solution.",
+            "Spend 30 minutes reviewing the mock: classify each issue as knowledge, implementation, communication, or time management.",
+            "Spend 30 minutes rehearsing behavioral and project explanations aloud.",
+            "Use the remaining time to review notes and re-implement one previously missed pattern rather than learning a new advanced topic."
+          ],
+          "recommended_resources": [
+            {
+              "name": "LeetCode Interview Crash Course",
+              "url": "https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/",
+              "purpose": "Reference for final review of core data structures and interview techniques."
+            }
+          ],
+          "estimated_minutes": 180,
+          "completion_criteria": [
+            "Complete one uninterrupted timed mock and communicate throughout.",
+            "Test the final implementation with normal and edge cases.",
+            "Write down the three highest-impact corrections from the mock.",
+            "Prepare at least four truthful behavioral or project stories with a clear situation, action, and outcome."
+          ],
+          "reason": "A realistic mock and structured review reveal performance gaps that passive study may not expose."
+        }
+      ],
+      "phase_completion_criteria": [
+        "Complete one timed coding mock and document specific corrections.",
+        "Demonstrate independent recall of the weakest coding pattern and traversal fundamentals.",
+        "Deliver a concise system-design walkthrough and at least four prepared behavioral or project examples."
+      ]
+    }
+  ],
+  "schedule": {
+    "total_days": 7,
+    "hours_per_day": 4,
+    "daily_plan": [
+      {
+        "day": 1,
+        "focus": "Establish baseline and review coding foundations and array/hash-map basics.",
+        "tasks": [
+          "Complete the timed baseline problem and record your error analysis.",
+          "Review complexity and interview communication.",
+          "Solve foundational array, string, and hash-map problems."
+        ],
+        "topic_ids": [
+          "T1",
+          "T2"
+        ],
+        "estimated_hours": 4,
+        "expected_outcome": "You have a realistic baseline, a repeatable solution process, and initial practice with common array and hash-map operations."
+      },
+      {
+        "day": 2,
+        "focus": "Build array-pattern fluency and begin common algorithm patterns.",
+        "tasks": [
+          "Practice sliding-window, two-pointer, and frequency-count problems.",
+          "Study binary-search boundaries and complete a focused practice problem."
+        ],
+        "topic_ids": [
+          "T2",
+          "T4"
+        ],
+        "estimated_hours": 4,
+        "expected_outcome": "You can explain array-pattern invariants and implement a basic binary search."
+      },
+      {
+        "day": 3,
+        "focus": "Continue high-yield patterns and review weak array techniques.",
+        "tasks": [
+          "Complete a medium array or string problem.",
+          "Practice a stack problem and a sorting or interval problem.",
+          "Record mistakes and re-solve one missed problem."
+        ],
+        "topic_ids": [
+          "T2",
+          "T4"
+        ],
+        "estimated_hours": 4,
+        "expected_outcome": "You have practiced multiple patterns and can identify at least one area for targeted repair."
+      },
+      {
+        "day": 4,
+        "focus": "Learn tree traversal and introduce system-design structure.",
+        "tasks": [
+          "Implement tree DFS and BFS and solve a traversal problem.",
+          "Start a basic system-design walkthrough.",
+          "Reserve a short review block for communicating your reasoning aloud."
+        ],
+        "topic_ids": [
+          "T3",
+          "T4",
+          "T5",
+          "T6"
+        ],
+        "estimated_hours": 4,
+        "expected_outcome": "You can implement basic tree traversals and begin a design discussion by clarifying requirements."
+      },
+      {
+        "day": 5,
+        "focus": "Practice graph traversal and complete a first small system design.",
+        "tasks": [
+          "Practice graph reachability or connected components with a visited set.",
+          "Complete a requirements-first design of a small service, including APIs and a data model."
+        ],
+        "topic_ids": [
+          "T3",
+          "T5"
+        ],
+        "estimated_hours": 4,
+        "expected_outcome": "You can explain basic traversal complexity and present a structured entry-level design."
+      },
+      {
+        "day": 6,
+        "focus": "Consolidate design, pattern selection, and timed interview execution.",
+        "tasks": [
+          "Give a second concise system-design walkthrough.",
+          "Complete a mixed-pattern coding review.",
+          "Run the timed coding mock and review performance."
+        ],
+        "topic_ids": [
+          "T4",
+          "T5",
+          "T6"
+        ],
+        "estimated_hours": 4,
+        "expected_outcome": "You have tested coding execution under time pressure and identified a small set of final corrections."
+      },
+      {
+        "day": 7,
+        "focus": "Targeted review and interview-ready explanations.",
+        "tasks": [
+          "Re-solve one missed array or string problem.",
+          "Recall and implement a short tree or graph traversal.",
+          "Review one algorithm pattern and system-design outline.",
+          "Rehearse behavioral and project examples; avoid starting advanced new topics."
+        ],
+        "topic_ids": [
+          "T2",
+          "T3",
+          "T4",
+          "T5",
+          "T6"
+        ],
+        "estimated_hours": 3.5,
+        "expected_outcome": "You finish with refreshed core patterns, a concise design framework, and prepared examples without overloading the final day."
+      }
+    ],
+    "adjustment_strategy": "The plan assumes up to four focused hours daily. If you have less time, preserve the timed coding mock, T2 practice, and system-design framework; remove optional extra problems first. If you discover a major coding gap, shift time from additional system-design detail or new patterns to independent coding practice and review. If your recruiter confirms there is no system-design round, reduce T5 to a brief fundamentals review and spend that time on your weakest coding pattern. Include short breaks within study blocks; they are not counted as focused study hours."
+  },
+  "readiness_benchmarks": [
+    {
+      "benchmark_id": "R1",
+      "category": "Problem-solving process and communication",
+      "benchmark": "On an unfamiliar coding prompt, clarify requirements, explain an approach before coding, and communicate progress and trade-offs.",
+      "measurement_method": "Use the timed mock or record a practice session; check whether each step occurred without a reminder.",
+      "target_threshold": "Complete all five steps in at least one mock: clarify, propose, analyze, implement, and test.",
+      "importance": "high",
+      "remediation_if_unmet": "Practice narrating the five-step routine on two easier problems before attempting another timed mock."
+    },
+    {
+      "benchmark_id": "R2",
+      "category": "Independent coding accuracy",
+      "benchmark": "Solve representative array, hash-map, and common-pattern problems independently.",
+      "measurement_method": "Track a set of fresh timed problems, including whether the final solution passes self-created normal and edge-case tests.",
+      "target_threshold": "As a practical readiness target, solve at least 3 of 4 representative easy or medium problems independently within about 30 to 40 minutes each, with correct complexity analysis.",
+      "importance": "critical",
+      "remediation_if_unmet": "Identify whether failures come from pattern recognition, implementation, or edge cases; drill the weakest category and retry with new problems."
+    },
+    {
+      "benchmark_id": "R3",
+      "category": "Data-structure implementation",
+      "benchmark": "Implement basic tree DFS, tree BFS, and graph traversal with appropriate state tracking.",
+      "measurement_method": "Write implementations from a blank editor and explain complexity and visited-state behavior.",
+      "target_threshold": "Correctly implement at least one DFS and one BFS traversal without consulting a solution, including relevant empty-input and repeated-visit checks.",
+      "importance": "high",
+      "remediation_if_unmet": "Trace a small example by hand, review base cases and queue or stack operations, then re-implement from memory."
+    },
+    {
+      "benchmark_id": "R4",
+      "category": "System-design fundamentals",
+      "benchmark": "Structure a small design discussion around requirements, APIs, data, request flow, and trade-offs.",
+      "measurement_method": "Deliver a timed 20-minute walkthrough and check each required design element against a checklist.",
+      "target_threshold": "Cover requirements and assumptions, at least one API, a basic data model, request flow, one bottleneck, and one trade-off.",
+      "importance": "medium",
+      "remediation_if_unmet": "Use a fixed outline and redo a smaller design prompt; prioritize clarity and justified choices over adding components."
+    },
+    {
+      "benchmark_id": "R5",
+      "category": "Timed mock performance",
+      "benchmark": "Complete a realistic coding mock while reasoning aloud, testing code, and responding constructively to difficulty.",
+      "measurement_method": "Score the mock on correctness, approach, complexity, communication, edge cases, and time management.",
+      "target_threshold": "Reach at least 4 of 6 categories at a satisfactory level, with no major communication or testing failure; use this as a planning target rather than a company-specific cutoff.",
+      "importance": "high",
+      "remediation_if_unmet": "Review the recording or notes, choose the two weakest categories, and perform a shorter focused practice before the interview."
+    },
+    {
+      "benchmark_id": "R6",
+      "category": "Behavioral and project readiness",
+      "benchmark": "Explain truthful examples of collaboration, challenge, learning, and project contribution.",
+      "measurement_method": "Rehearse aloud and check that each answer gives context, your specific actions, and an outcome or lesson.",
+      "target_threshold": "Prepare at least four concise examples and a clear explanation of your contribution to each relevant resume project.",
+      "importance": "medium",
+      "remediation_if_unmet": "Draft bullet-point STAR outlines from real experiences and rehearse them without memorizing a script."
+    }
+  ],
+  "interview_execution": {
+    "technical_interview_approach": [
+      "Restate the problem and clarify constraints, expected input, output, and edge cases before coding.",
+      "Offer a straightforward solution first, then improve it if the constraints justify optimization.",
+      "Explain the key invariant or reasoning before implementation.",
+      "Write code in the language you know best; keep names clear and avoid unnecessary abstractions.",
+      "Use a small example to trace the implementation and test edge cases such as empty input, duplicates, boundaries, and disconnected nodes where relevant.",
+      "State time and space complexity and explain the trade-offs.",
+      "If stuck, communicate what you know, test a simpler case, and consider a brute-force approach rather than going silent."
+    ],
+    "behavioral_preparation": [
+      "Prepare truthful STAR-style examples for collaboration, a difficult problem, a mistake or failure, and learning or initiative.",
+      "Keep context brief and emphasize your own actions, decisions, and outcome.",
+      "Be ready to discuss how you received feedback, handled uncertainty, and worked with others.",
+      "Do not invent metrics or claim ownership of work you did not perform."
+    ],
+    "project_and_resume_preparation": [
+      "Review each resume project and prepare a concise explanation of the problem, your contribution, implementation choices, and outcome.",
+      "Be prepared to discuss one technical trade-off, one challenge, and what you would improve next.",
+      "Review the code or technical details of projects you expect to discuss so your explanation matches your actual work."
+    ],
+    "common_mistakes_to_avoid": [
+      "Starting implementation before understanding constraints or explaining a plan.",
+      "Optimizing prematurely without first establishing a correct approach.",
+      "Ignoring edge cases, testing only one happy path, or failing to state complexity.",
+      "Treating a memorized solution as understanding; practice re-implementation from a blank editor.",
+      "Overcomplicating an entry-level system design with components that do not follow from requirements.",
+      "Spending the final day on advanced topics instead of reviewing mistakes and protecting time for rest."
+    ]
+  },
+  "final_recommendations": {
+    "highest_impact_actions": [
+      "Complete timed, independent practice on arrays, strings, hash maps, and common patterns, and track mistakes in an error log.",
+      "Practice explaining your reasoning and testing edge cases aloud on every problem.",
+      "Implement tree DFS, BFS, and basic graph traversal from memory.",
+      "Use a simple requirements-first framework to practice one or two small system designs.",
+      "Complete one timed mock interview and use its results to choose final review topics."
+    ],
+    "activities_to_deprioritize": [
+      "Advanced dynamic programming, specialized graph algorithms, and niche data structures unless your target interview information specifically calls for them.",
+      "Deep distributed-systems architecture beyond the basic concepts needed for a small design discussion.",
+      "Passive video watching, large unfiltered problem lists, and repeatedly reviewing solutions without re-implementing them.",
+      "Learning a new programming language or switching tools during the final week."
+    ],
+    "final_review_strategy": [
+      "Review the error log and select only the two or three most consequential weaknesses.",
+      "Re-solve previously missed problems from a blank editor and explain the approach before coding.",
+      "Refresh complexity analysis, binary-search boundaries, hash-map use, traversal patterns, and edge-case testing.",
+      "Rehearse one concise system-design outline and your behavioral and project examples.",
+      "On the final evening, stop adding new topics; prioritize light review, logistics, and adequate rest."
+    ],
+    "readiness_assessment": "Given the unknown starting skill level and only one week, readiness cannot be guaranteed. You are in a stronger position if you meet the independent-coding and timed-mock benchmarks, can implement basic traversals, and can communicate a structured small-system design. If coding benchmarks remain unmet, prioritize coding accuracy and communication over expanding system-design depth."
+  }
+}

@@ -2,6 +2,11 @@ Act as a FAANG-level Senior Software Engineer and experienced interviewer for en
 
 I am preparing for **[ROLE]**. My focus areas are **[TOPICS]**. My background, current skills, available time, interview deadline, target companies, and goals are: **[CONTENT]**.
 
+PROJECT VARIABLES
+ - role: {ROLE}
+ - topics: {TOPICS}
+ - main_content: {CONTENT}
+
 Analyze my situation and create a complete, personalized, step-by-step interview preparation roadmap.
 
 ### Objectives

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Coach</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div>
+        <p class="eyebrow">Interview Coach</p>
+        <h1>Build a focused preparation plan.</h1>
+        <p class="lede">Tell us what you’re preparing for. Get a practical roadmap organized around your role, priorities, and constraints.</p>
+      </div>
+    </header>
+
+    <section class="panel form-panel" aria-labelledby="form-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Inputs</p>
+          <h2 id="form-title">Your preparation context</h2>
+        </div>
+        <span class="step">01</span>
+      </div>
+      <form id="coach-form">
+        <div class="field-grid">
+          <label>
+            <span>Target role</span>
+            <input id="role" name="role" type="text" placeholder="Entry-level Software Engineer" required>
+          </label>
+          <label>
+            <span>Focus topics</span>
+            <input id="topic" name="topic" type="text" placeholder="Data structures, algorithms, system design" required>
+          </label>
+        </div>
+        <label>
+          <span>Background, constraints, and goals</span>
+          <textarea id="content" name="content" rows="5" placeholder="Describe your experience, deadline, availability, target companies, and anything you find difficult." required></textarea>
+        </label>
+        <div class="form-footer">
+          <p class="hint">The response will be generated from your prompt template.</p>
+          <button id="submit-button" type="submit"><span>Generate roadmap</span><span class="button-arrow">→</span></button>
+        </div>
+      </form>
+      <p id="form-error" class="error" role="alert" hidden></p>
+    </section>
+
+    <section id="results" hidden aria-live="polite">
+      <div class="results-header">
+        <div>
+          <p class="eyebrow">Your roadmap</p>
+          <h2 id="results-title">Preparation plan</h2>
+        </div>
+        <button id="new-plan" class="quiet-button" type="button">New plan</button>
+      </div>
+      <div id="results-content"></div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
