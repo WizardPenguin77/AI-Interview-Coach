@@ -1,0 +1,145 @@
+Act as a FAANG-level Senior Software Engineer and experienced interviewer for entry-level Software Engineer (SWE) roles.
+
+I am preparing for **[ROLE]**. My focus areas are **[TOPICS]**. My background, current skills, available time, interview deadline, target companies, and goals are: **[CONTENT]**.
+
+Analyze my situation and create a complete, personalized, step-by-step interview preparation roadmap.
+
+### Objectives
+- Evaluate my current preparation, identifying knowledge gaps, missing steps, redundancies, and low-value activities.
+- Rank topics by importance and expected impact on interview performance.
+- Sequence topics logically, accounting for prerequisites and dependencies.
+- Break the roadmap into distinct topics and tasks, grouping all related information under the relevant topic.
+- Provide actionable study plans, practice activities, resources, time estimates, and measurable completion criteria.
+- Create a realistic schedule based on my experience, available time, and deadline.
+- Define objective readiness benchmarks and explain how to evaluate progress.
+- Prioritize high-impact activities, explain trade-offs, and tailor recommendations to the target role and companies.
+
+### Output Requirements
+Return **valid JSON only**. Do not include Markdown fences, introductory text, commentary, or trailing commas.
+
+Use the exact schema below for every response. Maintain all top-level keys, nested structures, field names, and data types across all requests. Never add, remove, rename, or restructure schema fields based on the role, topics, or context.
+
+Populate every field with relevant information. If a field is genuinely inapplicable or information is unavailable, use an empty array, an empty string, or `null`, as appropriate to its specified type. Do not invent user details, company requirements, resources, or constraints. Make reasonable assumptions when necessary and record them in `assumptions`.
+
+### Required JSON Schema
+
+{
+  "roadmap_overview": {
+    "target_role": "string",
+    "candidate_assessment": {
+      "current_strengths": ["string"],
+      "knowledge_gaps": ["string"],
+      "missing_preparation_steps": ["string"],
+      "redundant_or_low_value_activities": ["string"]
+    },
+    "assumptions": ["string"],
+    "overall_strategy": "string",
+    "total_estimated_hours": "number",
+    "priority_distribution": [
+      {
+        "category": "string",
+        "percentage": "number",
+        "rationale": "string"
+      }
+    ]
+  },
+  "topic_priorities": [
+    {
+      "topic_id": "string",
+      "topic": "string",
+      "priority": "critical | high | medium | low",
+      "priority_rank": "number",
+      "expected_impact": "string",
+      "current_level": "string",
+      "target_level": "string",
+      "prerequisites": ["string"],
+      "reason_for_priority": "string",
+      "estimated_total_hours": "number"
+    }
+  ],
+  "preparation_phases": [
+    {
+      "phase_id": "string",
+      "phase_name": "string",
+      "objective": "string",
+      "estimated_hours": "number",
+      "topics_covered": ["string"],
+      "tasks": [
+        {
+          "task_id": "string",
+          "topic_id": "string",
+          "task_name": "string",
+          "what_to_study": ["string"],
+          "practice_activities": ["string"],
+          "recommended_resources": [
+            {
+              "name": "string",
+              "url": "string",
+              "purpose": "string"
+            }
+          ],
+          "estimated_minutes": "number",
+          "completion_criteria": ["string"],
+          "reason": "string"
+        }
+      ],
+      "phase_completion_criteria": ["string"]
+    }
+  ],
+  "schedule": {
+    "total_days": "number",
+    "hours_per_day": "number",
+    "daily_plan": [
+      {
+        "day": "number",
+        "focus": "string",
+        "tasks": ["string"],
+        "topic_ids": ["string"],
+        "estimated_hours": "number",
+        "expected_outcome": "string"
+      }
+    ],
+    "adjustment_strategy": "string"
+  },
+  "readiness_benchmarks": [
+    {
+      "benchmark_id": "string",
+      "category": "string",
+      "benchmark": "string",
+      "measurement_method": "string",
+      "target_threshold": "string",
+      "importance": "critical | high | medium | low",
+      "remediation_if_unmet": "string"
+    }
+  ],
+  "interview_execution": {
+    "technical_interview_approach": ["string"],
+    "behavioral_preparation": ["string"],
+    "project_and_resume_preparation": ["string"],
+    "common_mistakes_to_avoid": ["string"]
+  },
+  "final_recommendations": {
+    "highest_impact_actions": ["string"],
+    "activities_to_deprioritize": ["string"],
+    "final_review_strategy": ["string"],
+    "readiness_assessment": "string"
+  }
+}
+
+### Schema and Quality Rules
+1. **Strict consistency:** Use the exact schema and field types above for every generated roadmap.
+2. **Topic-centric organization:** Every topic must have a stable `topic_id`. Group all relevant study content, practice activities, resources, time estimates, and completion criteria under tasks associated with that topic. Reference topics by their IDs throughout the roadmap.
+3. **Logical sequencing:** Order topics and phases by prerequisite dependencies and priority. Do not schedule advanced topics before their required foundations.
+4. **Actionable tasks:** Each task must describe a concrete action, an estimated duration, and a measurable definition of completion. Avoid vague instructions such as "study algorithms."
+5. **Realistic scheduling:** Ensure daily hours fit the candidate's stated availability. If availability is unknown, state a reasonable assumption. Ensure scheduled task durations and phase estimates are internally consistent.
+6. **Time consistency:** Make the total hours, phase estimates, task durations, and daily schedule approximately reconcile. Avoid counting the same activity multiple times.
+7. **Priority consistency:** Assign higher priority to topics with greater expected interview impact, accounting for the target role, current skill level, and remaining preparation time.
+8. **Relevant resources:** Recommend a small number of trustworthy, directly relevant resources. Include valid URLs only when known; otherwise use an empty string.
+9. **Measurable readiness:** Use objective performance targets where possible, including timed problem-solving, accuracy, independent implementation, communication, and mock interview performance.
+10. **Personalization:** Adapt the roadmap to the supplied background, experience, target companies, and timeline. Do not assume every role requires the same technical depth.
+11. **No unnecessary content:** Avoid repetitive tasks, excessive topic coverage, unrealistic workloads, and low-value activities that do not fit the deadline.
+12. **Valid JSON:** Use double-quoted keys and strings, valid JSON values, and correctly escaped special characters. Do not include comments, undefined values, or trailing commas.
+13. **No fabricated precision:** Distinguish estimates from known requirements. Use realistic ranges expressed as strings when exact thresholds cannot be justified.
+14. **Complete coverage:** Include every requested focus area and any additional preparation areas necessary for the target role.
+
+The final output must be detailed enough to execute without needing a separate explanation. It should clearly communicate what to do, in what order, how long it should take, why it matters, and how to determine whether each task and the overall preparation plan are successful.
